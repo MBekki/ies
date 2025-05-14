@@ -1,0 +1,173 @@
+@import 'tailwindcss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    max-width: 1120px;
+}
+
+.header {
+    background: linear-gradient(#00000091, #000000ac),
+        url(../src/assets/images/1580032.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.navbar {
+    padding: 10px 0px;
+}
+.myshadow {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.44);
+}
+
+.open-menu {
+    padding: 16px;
+}
+.open-menu li {
+    padding: 5px;
+}
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+td {
+    text-align: center;
+}
+
+.slider {
+    position: relative !important;
+    padding: 30px !important;
+}
+.next {
+    transform: scale(1.8);
+    position: absolute !important;
+}
+.prev {
+    transform: scale(1.8);
+    position: absolute !important;
+}
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #2d2d2d;
+    color: white;
+    width: 250px;
+    transition: width 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.toggle-button {
+    padding: 10px;
+    background-color: #1f1f1f;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+}
+
+.menu {
+    flex: 1;
+    overflow-y: auto;
+}
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 17px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.menu-item:hover {
+    background-color: #444;
+    border-radius: 6px;
+}
+
+.menu-item .icon {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.sidebar.collapsed .menu-item .icon {
+    margin-right: 0;
+}
+
+.menu-item .label {
+    font-size: 14px;
+}
+
+.sidebar.collapsed .menu-item .label {
+    display: none;
+}
+
+.main {
+    flex: 1;
+    margin-left: 250px;
+    overflow-y: auto;
+    background-color: #f4f4f4;
+    height: 100vh;
+    transition: all 0.3s;
+}
+.active-link .menu-item {
+    background-color: #444 !important;
+    border-radius: 6px !important;
+}
+
+.sidebar.collapsed + .main {
+    margin-left: 80px;
+}
+
+.navbar {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.content {
+    background-color: white;
+    padding: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-height: 88%;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1320px) {
+    .container {
+        max-width: 90%;
+    }
+}
