@@ -1,6 +1,3 @@
-import { FaRegCalendarAlt, FaUser } from 'react-icons/fa';
-import { NavLink } from 'react-router';
-
 const data = [
     {
         title: 'Приказ начальника Государственной инспекции по надзору в электроэнергетике «Узгосэнергонадзор», зарегистрировано 10.09.2004 г., рег. номер 1405',
@@ -16,6 +13,11 @@ const data = [
         title: 'ПРАВИЛА техники безопасности при эксплуатации теплоиспользующих установок и тепловых сетей',
         img: 'https://aniq.uz/photos/news/CuyrWIM2WupfidG.jpeg',
         link: 'https://nrm.uz/contentf?doc=103731_pravila_tehniki_bezopasnosti_pri_ekspluatacii_teploispolzuyushchih_ustanovok_i_teplovyh_setey_(utverjdeny_prikazom_nachalnika_inspekcii_uzgosenergonadzor_ot_05_04_2006_g_n_58_zaregistrirovannym_myu_06_05_2006_g_n_1572)&products=1_vse_zakonodatelstvo_uzbekistana',
+    },
+    {
+        title: 'Постановление об утверждении правил техники безопасности при эксплуатации электроустановок',
+        img: 'https://cdn.tpp.uz/2023/01/07/05/22/hy4kd1LvhVAhcINkhuumOD8fEY1u4zmO_low.JPG',
+        link: 'https://lex.uz/acts/1043989',
     },
 ];
 
